@@ -2,8 +2,8 @@
 # Homepage configuration
 # See https://fontawesome.com/icons for icons options
 
-subtitle: "dashboard"
-title: "Homer"
+subtitle: "Take control"
+title: "UIO"
 logo: "assets/icons/wireguard.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
@@ -40,22 +40,30 @@ colors:
 
 # Optional message
 message:
-  #url: https://b4bz.io
+  # url: https://b4bz.io
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
-  title: "Demo !"
-  icon: "fa fa-grin"
-  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+  title: "Prose of the day"
+  icon: "fa fa-book"
+  content: "Favour enablers over enhancements. Focus on the plumbing. But don't forget about the porcelain."
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Contribute"
+  - name: "unmanaged"
     icon: "fab fa-github"
-    url: "https://github.com/cherwin/homer"
+    url: "https://github.com/cherwin/unmanaged"
     target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
+  - name: "playbooks"
+    icon: "fab fa-github"
+    url: "https://github.com/cherwin/playbooks"
+    target: "_blank" # optional html a tag target attribute
+  - name: "management"
+    icon: "fab fa-github"
+    url: "https://github.com/ansorren/management"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Hetzner"
+    icon: "fas fa-cloud"
+    url: "https://console.hetzner.cloud/projects"
   # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
   # see url field and assets/additionnal-page.yml.dist used in this example:
   - name: "another page!"
@@ -66,18 +74,18 @@ links:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Applications"
-    icon: "fas fa-cloud"
+  - name: "Services"
+    # icon: "fas fa-cloud"
     items:
       - name: "Grafana"
         logo: "assets/icons/grafana.png"
         subtitle: "Pretty visualizations"
         tag: "app"
-        url: "https://www.grafana.com"
+        url: "https://grafana.black.unmanaged.io"
         target: "_blank" # optional html a tag target attribute
       - name: "Prometheus"
         logo: "assets/icons/prometheus.png"
         subtitle: "Next-gen metrics collection"
         tag: "app"
-        url: "https://www.prometheus.io"
+        url: "https://prometheus.black.unmanaged.io"
 
