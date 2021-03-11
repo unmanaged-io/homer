@@ -2,7 +2,7 @@
 # Homepage configuration
 # See https://fontawesome.com/icons for icons options
 
-subtitle: "Take control"
+subtitle: "Take control - unmanaged.io"
 title: "UIO"
 logo: "assets/icons/wireguard.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
@@ -44,11 +44,14 @@ message:
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
   title: "Prose of the day"
   icon: "fa fa-book"
-  content: "Favour enablers over enhancements. Focus on the plumbing. But don't forget about the porcelain."
+  content: "Favour enablers over enhancements. Focus on the plumbing. But don't forget about the porcelain. -- Cherwin R. Nooitmeer"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
+  - name: "Hetzner"
+    icon: "fas fa-cloud"
+    url: "https://console.hetzner.cloud/projects"
   - name: "unmanaged"
     icon: "fab fa-github"
     url: "https://github.com/cherwin/unmanaged"
@@ -61,14 +64,6 @@ links:
     icon: "fab fa-github"
     url: "https://github.com/ansorren/management"
     target: "_blank" # optional html a tag target attribute
-  - name: "Hetzner"
-    icon: "fas fa-cloud"
-    url: "https://console.hetzner.cloud/projects"
-  # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additionnal-page.yml.dist used in this example:
-  - name: "another page!"
-    icon: "fas fa-file-alt"
-    url: "#additionnal-page"
 
 # Services
 # First level array represent a group.
@@ -88,4 +83,14 @@ services:
         subtitle: "Next-gen metrics collection"
         tag: "app"
         url: "https://prometheus.black.unmanaged.io"
+      - name: "Kibana"
+        logo: "assets/icons/kibana.png"
+        subtitle: "View logs"
+        tag: "app"
+        url: "https://kibana.black.unmanaged.io"
+      - name: "Keycloak"
+        logo: "assets/icons/keycloak.png"
+        subtitle: "Identity and Access Management"
+        tag: "app"
+        url: "https://login.black.unmanaged.io"
 
